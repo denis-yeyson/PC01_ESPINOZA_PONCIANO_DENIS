@@ -33,8 +33,8 @@ public class EcuacionSegundoGradoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String rpta = "";
                 double A = Double.parseDouble(varA.getText().toString());
-                double B = Double.parseDouble(varA.getText().toString());
-                double C = Double.parseDouble(varA.getText().toString());
+                double B = Double.parseDouble(varB.getText().toString());
+                double C = Double.parseDouble(varC.getText().toString());
 
                 if ((A == 0) && (B == 0) && (C == 0)) {
                     rpta = "La ecuación tiene infinitas soluciones.";
