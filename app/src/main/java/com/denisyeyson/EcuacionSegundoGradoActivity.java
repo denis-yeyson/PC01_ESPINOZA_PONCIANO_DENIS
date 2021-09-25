@@ -111,7 +111,6 @@ public class EcuacionSegundoGradoActivity extends AppCompatActivity {
                         rpta = "{"+rpta1+";"+rpta2+"}";
                     }
                 }
-                limpiarEjercicios1();
                 resultado.setText(rpta);
             }
         });
@@ -119,7 +118,10 @@ public class EcuacionSegundoGradoActivity extends AppCompatActivity {
         limpiar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                limpiarEjercicios1();
+                varA.setText("");
+                varB.setText("");
+                varC.setText("");
+                resultado.setText("Resultado ?");
             }
         });
 
@@ -129,14 +131,5 @@ public class EcuacionSegundoGradoActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
-
-    }
-
-    public void limpiarEjercicios1() {
-        varA.setText("");
-        varB.setText("");
-        varC.setText("");
-        resultado.setText("Resultado ?");
     }
 }

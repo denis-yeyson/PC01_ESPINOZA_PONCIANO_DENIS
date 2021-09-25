@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".BienvenidoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lblNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lblApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracias por ingresar  !!!"
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAtras3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40sp"
+        android:text="ATRAS" />
+
+</LinearLayout>

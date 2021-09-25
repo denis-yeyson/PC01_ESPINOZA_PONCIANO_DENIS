@@ -3,9 +3,11 @@ package com.denisyeyson;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,16 +31,17 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, IntentExplicitoActivity.class);
-                startActivity(intent1);
+                Intent irpage = new Intent(MainActivity.this, IntentExplicitoActivity.class);
+                startActivity(irpage);
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, IntentImplicitoActivity.class);
-                startActivity(intent1);
+                Intent intent_implicito = new Intent(Intent.ACTION_VIEW);
+                intent_implicito.setData(Uri.parse("https://www.google.com.pe"));
+                startActivity(intent_implicito);
             }
         });
     }
